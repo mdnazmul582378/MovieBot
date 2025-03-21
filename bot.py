@@ -38,7 +38,7 @@ bot = Client(
     "advanced_search_bot",
     api_id=25534833,
     api_hash="8ec7028f3b0871fe6f0ee68e8230e4bc",
-    bot_token="8035029032:AAHhEFp8ZHW4OZUaFK_CDzsKnafQHUjiI6g"
+    bot_token="7904443875:AAGjAEP9TPljt3f9XbANw0AAfXgm-20u4XY"
 )
 
 @bot.on_message(filters.command("start"))
@@ -79,7 +79,7 @@ async def send_paginated_results(client, message, results, query, page, start_ti
     current_page_results = results[start_idx:end_idx]
 
     buttons = [
-        [InlineKeyboardButton(f"🎬 {m['title']} | {m['year']} | {m['genre']}", url=f"https://t.me/Movie_Linkser_Bot?start={m['id']}")]
+        [InlineKeyboardButton(f"🎬 {m['title']} | {m['year']} | {m['genre']}", url=f"https://t.me/autolinkersbot?start={m['id']}")]
         for m in current_page_results
     ]
 
